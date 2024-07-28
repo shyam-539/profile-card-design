@@ -1,0 +1,96 @@
+/* Center the profile card */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #deedc4;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Profile card container */
+.profile-card {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Profile header with gradient and wave effect */
+.profile-header {
+    background: linear-gradient(135deg, #FF6B6B, #FFD93D);
+    padding: 30px 20px 60px;
+    /* position: relative; */
+}
+
+.profile-header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -20px; /* Adjusted to extend background lower */
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+}
+
+/* Profile image */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: -40px; /* Adjusted for lower background effect */
+    position: relative;
+    z-index: 1;
+}
+
+/* Profile info container */
+.profile-info {
+    padding: 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+.profile-info h1 {
+    font-size: 1.8em;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: 700;
+}
+
+.profile-info p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.social-media {
+    margin: 30px 0;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #666;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #FF6B6B;
+}
+
+/* Profile summary */
+.profile-summary {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+    padding: 0 20px;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+}
